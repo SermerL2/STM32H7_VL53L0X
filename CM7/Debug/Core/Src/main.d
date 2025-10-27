@@ -33,14 +33,14 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
  ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/tim.h \
  ../Core/Inc/usart.h ../Core/Inc/gpio.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
- C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
+ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h
 ../Core/Inc/main.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
@@ -79,11 +79,11 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
 ../Core/Inc/gpio.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
-C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
+C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h:

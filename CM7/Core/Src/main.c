@@ -67,7 +67,25 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int medianFilter5(int arr[]) {
+    int temp[10];
 
+    // Копируем и сортируем
+    for(int i = 0; i < 10; i++) temp[i] = arr[i];
+
+    // Простая сортировка пузырьком
+    for(int i = 0; i < 9; i++) {
+        for(int j = i+1; j < 10; j++) {
+            if(temp[i] > temp[j]) {
+                int tmp = temp[i];
+                temp[i] = temp[j];
+                temp[j] = tmp;
+            }
+        }
+    }
+
+    return temp[5]; // медиана
+}
 /* USER CODE END 0 */
 
 /**
@@ -177,6 +195,12 @@ Error_Handler();
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  int buffer[10] = {0};
+  int index = 0;
+  int i = 0;
+  int filtered = 0;
+  uint16_t MessageLen;
+  uint8_t Message[50];
   while (1)
   {
 
@@ -184,8 +208,23 @@ Error_Handler();
 
 	  if(RangingData.RangeStatus == 0)
 	  {
-		  MessageLen = sprintf((char*)Message, "Measured distance: %i\n\r", RangingData.RangeMilliMeter);
-		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+		  buffer[index] = RangingData.RangeMilliMeter;
+
+	      MessageLen = sprintf((char*)Message, "Raw distance: %i mm", RangingData.RangeMilliMeter);
+	      HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+
+	      if (i >= 8) {
+	          filtered = medianFilter5(buffer);
+	          MessageLen = sprintf((char*)Message, " | Filtered: %i mm\n\r", filtered);
+	      } else {
+	          MessageLen = sprintf((char*)Message, "\n\r");
+	      }
+	      HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+
+	      i++;
+	      if(i == 1000)
+	          i = 8;
+	      index = (index + 1) % 10;
 	  }
 
     /* USER CODE END WHILE */
