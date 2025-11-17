@@ -193,6 +193,7 @@ Error_Handler();
 
   /* USER CODE END 2 */
 
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   int buffer[10] = {0};
@@ -201,9 +202,13 @@ Error_Handler();
   int filtered = 0;
   uint16_t MessageLen;
   uint8_t Message[50];
+  uint32_t start = 0;
+  uint32_t end = 0;
+  uint32_t time_ms = 0;
   while (1)
   {
 
+	  uint32_t start = HAL_GetTick();
 	  VL53L0X_PerformSingleRangingMeasurement(Dev, &RangingData);
 
 	  if(RangingData.RangeStatus == 0)
@@ -215,7 +220,7 @@ Error_Handler();
 
 	      if (i >= 8) {
 	          filtered = medianFilter5(buffer);
-	          MessageLen = sprintf((char*)Message, " | Filtered: %i mm\n\r", filtered);
+	          MessageLen = sprintf((char*)Message, " | Filtered: %i mm", filtered);
 	      } else {
 	          MessageLen = sprintf((char*)Message, "\n\r");
 	      }
@@ -226,6 +231,18 @@ Error_Handler();
 	          i = 8;
 	      index = (index + 1) % 10;
 	  }
+	  else {
+		  MessageLen = sprintf((char*)Message, "Raw distance: %i mm", 2000);
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+		  MessageLen = sprintf((char*)Message, " | Filtered: %i mm", 2000);
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+	  }
+
+	  uint32_t end = HAL_GetTick();
+	  uint32_t time_ms = end - start;
+
+	  MessageLen = sprintf((char*)Message, " | Execution time: %lu ms\n", time_ms);
+	  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
 
     /* USER CODE END WHILE */
 

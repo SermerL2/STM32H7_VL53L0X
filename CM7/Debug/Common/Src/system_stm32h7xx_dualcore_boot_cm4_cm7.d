@@ -1,5 +1,5 @@
 Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.o: \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/Common/Src/system_stm32h7xx_dualcore_boot_cm4_cm7.c \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h745xx.h \
  ../../Drivers/CMSIS/Include/core_cm7.h \
