@@ -1,13 +1,13 @@
 Drivers/VL53L0X/core/src/vl53l0x_api.o: \
  ../Drivers/VL53L0X/core/src/vl53l0x_api.c \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h \
  ../Core/Inc/stm32h7xx_hal_conf.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h \
@@ -40,19 +40,19 @@ Drivers/VL53L0X/core/src/vl53l0x_api.o: \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h \
  ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_tuning.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_interrupt_threshold_settings.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_core.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_calibration.h \
- C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h:
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_tuning.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_interrupt_threshold_settings.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_core.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_calibration.h \
+ C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_device.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_types.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_def.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/platform/inc/vl53l0x_platform_log.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../Core/Inc/stm32h7xx_hal_conf.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_rcc.h:
@@ -85,8 +85,8 @@ C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/pla
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_tim_ex.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h:
 ../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_tuning.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_interrupt_threshold_settings.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_core.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_calibration.h:
-C:/projects/STM32Cube_FW_H7/Projects/VSL/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_tuning.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_interrupt_threshold_settings.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_core.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_calibration.h:
+C:/projects/uC/STM32CubeH7-1.11.0/STM32CubeH7-1.11.0/Projects/KREA/STM32H7_VL53L0X/CM7/Drivers/VL53L0X/core/inc/vl53l0x_api_strings.h:

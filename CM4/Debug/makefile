@@ -61,8 +61,8 @@ all: main-build
 main-build: VL53L0X_CM4.elf secondary-outputs
 
 # Tool invocations
-VL53L0X_CM4.elf VL53L0X_CM4.map: $(OBJS) $(USER_OBJS) C:\projects\STM32Cube_FW_H7\Projects\VSL\STM32H7_VL53L0X\CM4\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "VL53L0X_CM4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\projects\STM32Cube_FW_H7\Projects\VSL\STM32H7_VL53L0X\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VL53L0X_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+VL53L0X_CM4.elf VL53L0X_CM4.map: $(OBJS) $(USER_OBJS) C:\projects\uC\STM32CubeH7-1.11.0\STM32CubeH7-1.11.0\Projects\KREA\STM32H7_VL53L0X\CM4\STM32H745ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "VL53L0X_CM4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\projects\uC\STM32CubeH7-1.11.0\STM32CubeH7-1.11.0\Projects\KREA\STM32H7_VL53L0X\CM4\STM32H745ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VL53L0X_CM4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

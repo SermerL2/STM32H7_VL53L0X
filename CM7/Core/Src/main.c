@@ -67,6 +67,11 @@ static void MPU_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+int buffer[10] = {0};
+int index_i = 0;
+int i = 0;
+int filtered = 0;
+
 int medianFilter5(int arr[]) {
     int temp[10];
 
@@ -85,6 +90,51 @@ int medianFilter5(int arr[]) {
     }
 
     return temp[5]; // медиана
+}
+
+void measureDistVLX(){
+	  uint16_t MessageLen;
+	  uint8_t Message[50];
+
+	  uint32_t start = 0;
+	  uint32_t end = 0;
+	  uint32_t time_ms = 0;
+
+	  start = HAL_GetTick();
+	  VL53L0X_PerformSingleRangingMeasurement(Dev, &RangingData);
+
+	  if(RangingData.RangeStatus == 0)
+	  {
+		  buffer[index_i] = RangingData.RangeMilliMeter;
+
+		  MessageLen = sprintf((char*)Message, "Raw distance: %i mm", RangingData.RangeMilliMeter);
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+
+		  if (i >= 8) {
+			  filtered = medianFilter5(buffer);
+			  MessageLen = sprintf((char*)Message, " | Filtered: %i mm", filtered);
+		  } else {
+			  MessageLen = sprintf((char*)Message, "\n\r");
+		  }
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+
+		  i++;
+		  if(i == 1000)
+			  i = 8;
+		  index_i = (index_i + 1) % 10;
+	  }
+	  else {
+		  MessageLen = sprintf((char*)Message, "Raw distance: %i mm", 2000);
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+		  MessageLen = sprintf((char*)Message, " | Filtered: %i mm", 2000);
+		  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
+	  }
+
+	  end = HAL_GetTick();
+	  time_ms = end - start;
+
+	  MessageLen = sprintf((char*)Message, " | Execution time: %lu ms\n", time_ms);
+	  HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
 }
 /* USER CODE END 0 */
 
@@ -193,40 +243,13 @@ Error_Handler();
 
   /* USER CODE END 2 */
 
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  int buffer[10] = {0};
-  int index = 0;
-  int i = 0;
-  int filtered = 0;
-  uint16_t MessageLen;
-  uint8_t Message[50];
+
   while (1)
   {
-
-	  VL53L0X_PerformSingleRangingMeasurement(Dev, &RangingData);
-
-	  if(RangingData.RangeStatus == 0)
-	  {
-		  buffer[index] = RangingData.RangeMilliMeter;
-
-	      MessageLen = sprintf((char*)Message, "Raw distance: %i mm", RangingData.RangeMilliMeter);
-	      HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
-
-	      if (i >= 8) {
-	          filtered = medianFilter5(buffer);
-	          MessageLen = sprintf((char*)Message, " | Filtered: %i mm\n\r", filtered);
-	      } else {
-	          MessageLen = sprintf((char*)Message, "\n\r");
-	      }
-	      HAL_UART_Transmit(&huart3, Message, MessageLen, 100);
-
-	      i++;
-	      if(i == 1000)
-	          i = 8;
-	      index = (index + 1) % 10;
-	  }
-
+	  measureDistVLX();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
